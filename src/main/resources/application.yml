@@ -1,38 +1,7 @@
 server:
   port: 7778
 spring:
-  datasource:
-    password: root
-    url: jdbc:mysql://localhost:3306/majorP
-    username: root
-    driverClassName: com.mysql.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-  mail:
-    host: smtp.gmail.com
-    password: zjnhcqmaztbmlbir
-    port: 587
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-    username: anilkumargen03@gmail.com
-
-  
+  config:
+    import: optional:configserver:http://localhost:9091
   application:
-    name: Citizen-API
-
-  boot:
-    admin:
-      client:
-        url: http://localhost:1001/
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+    name: CITIZEN-API
