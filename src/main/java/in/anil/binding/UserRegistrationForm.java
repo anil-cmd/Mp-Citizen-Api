@@ -1,8 +1,8 @@
 package in.anil.binding;
 
-public class CitizenRegistrationForm {
+public class UserRegistrationForm {
 	
-	private String citizenName;
+	private String name;
 	
 	private String email;
 	
@@ -11,13 +11,17 @@ public class CitizenRegistrationForm {
 	private String phoneNumber;
 	
 	private String password;
+	
+	private String passwordUpdated;
 
-	public String getCitizenName() {
-		return citizenName;
+	
+
+	public String getName() {
+		return name;
 	}
 
-	public void setCitizenName(String citizenName) {
-		this.citizenName = citizenName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getEmail() {
@@ -51,11 +55,22 @@ public class CitizenRegistrationForm {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	
+
+	public String getPasswordUpdated() {
+		return passwordUpdated;
+	}
+
+	public void setPasswordUpdated(String passwordUpdated) {
+		this.passwordUpdated = passwordUpdated;
+	}
 
 	@Override
 	public String toString() {
-		return "CitizenRegistrationForm [citizenName=" + citizenName + ", email=" + email + ", gender=" + gender
-				+ ", phoneNumber=" + phoneNumber + ", password=" + password + "]";
+		return "UserRegistrationForm [name=" + name + ", email=" + email + ", gender=" + gender + ", phoneNumber="
+				+ phoneNumber + ", password=" + password + ", passwordUpdated=" + passwordUpdated + "]";
 	}
+
 	
 }

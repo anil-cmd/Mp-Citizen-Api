@@ -1,6 +1,6 @@
 package in.anil.binding;
 
-public class CitizenLoginForm {
+public class UserLoginForm {
 	
 	private String email;
 	
